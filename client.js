@@ -1,4 +1,5 @@
 const WebSocket = require('websocket');
+require("dotenv").config();
 
 const client = new WebSocket.client();
 
@@ -14,7 +15,7 @@ client.on('connect', (connection) => {
     });
   
     connection.on('close', () => {
-      console.log('WebSocket client disconnected');
+      console.log('Client disconnected');
     });
   
     connection.on('message', (message) => {
@@ -24,14 +25,11 @@ client.on('connect', (connection) => {
       }
     });
   
-  // Function to send PONG to server periodically
   function sendPong() {
     connection.send('PONG');
   }
-  
-  // Set interval to send PONG to server every 3 seconds
-  setInterval(sendPong, 8080);
 });
 
+const PORT = process.env.PORT || 3030;
 // Connect to WebSocket server
-client.connect('ws://localhost:8080');
+client.connect(`ws://localhost:${PORT}`);
