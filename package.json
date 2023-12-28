@@ -4,7 +4,14 @@
   "description": "This is an assignment of primetechGov",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server" :"node index.js",
+    "client1": "node client.js",
+    "client2": "node client.js",
+    "client3": "node client.js",
+    "client4": "node client.js",
+    "client5": "node client.js",
+    "all": "start cmd /k \"npm run server\" & timeout /t 5 & start cmd /k \"npm run client1\" & start cmd /k \"npm run client2\" & start cmd /k \"npm run client3\" & start cmd /k \"npm run client4\" & start cmd /k \"npm run client5\""
   },
   "repository": {
     "type": "git",
