@@ -1,0 +1,23 @@
+{
+  "name": "primetech",
+  "version": "1.0.0",
+  "description": "This is an assignment of primetechGov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamR3R/primetech.git"
+  },
+  "author": "Ramsundar Sivakumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamR3R/primetech/issues"
+  },
+  "homepage": "https://github.com/RamR3R/primetech#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "websocket": "^1.0.34"
+  }
+}
